@@ -6,7 +6,7 @@
       /* CSS styles for the page */
       body {
         font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
+        background-color: #FFFFFF;
       }
       #header1 {
       	display: block;
@@ -15,9 +15,14 @@
   		margin-top: 0.67em;
   		margin-bottom: 0.67em;
   		margin-left: 0;
-  		margin-right: 0;*/
-  		font-weight: bold;
+  		margin-right: 0;
+  		font-weight: bold;*/
   		/*border: 3px solid green;*/
+      padding: 5px;
+      text-align: center;
+      background: #1abc9c;
+      color: white;
+      /*font-size: 30px;*/
       }
       .headerline{
         /*text-align: center;*/
@@ -29,8 +34,8 @@
 		}
 
 		#test-text{
-			border: 3px solid grey;
-			margin:auto;
+			     border: 3px solid grey;
+			     margin:auto;
             padding:4px;
             /*background-color: light grey;*/
             width: 80%;
@@ -50,29 +55,34 @@
       	#box{
       		text-align: center;
       	}
+    #instruction{
+      text-align: center;
+    }
+
+    
 
     </style>
 </head>
 <body>
 	<header id='header1'>
 		<h2 style="text-align:center"><u>TYPING TEST-02</u></h2>
+  </header>
+  <hr>
 		<div class="headerline">
-				<a href="index.html">Home</a>
-				<a href="1.html">1</a> 
-				<a href="2.html">2</a>
-				<a href="3.html">3</a>
-				<a href="4.html">4</a>
-				<a href="5.html">5</a>
-				<a href="6.hmtl">6</a>
-				<a href="7.html">7</a>
-				<a href="8.html">8</a>
-				<a href="9.html">9</a>
+				<a href="index.html">Home</a> &nbsp
+				<a href="1.html">1</a> &nbsp
+				<a href="2.html">2</a> &nbsp
+				<a href="3.html">3</a> &nbsp
+				<a href="4.html">4</a> &nbsp
+				<a href="5.html">5</a> &nbsp
+				<a href="6.hmtl">6</a> &nbsp
+				<a href="7.html">7</a> &nbsp
+				<a href="8.html">8</a> &nbsp
+				<a href="9.html">9</a> &nbsp
 				<a href="10.html">10</a>
 		</div>
 		<hr>
-	</header>
-
-	<instruction>
+	<instruction id="instruction">
 		<h2>Type the following text as quickly and accurately as you can and press enter to <b>Finish</b>: </h2>
 	</instruction>
 
@@ -82,7 +92,8 @@
 	
     <!-- <label for="input-box">Type here:</label> -->
     <div id="box">
-		    <input type="text" id="input-box" autofocus>    	
+		    <input type="text" id="input-box" autofocus >   
+        <!-- <textarea name="input-box" rows="40" cols="40"></textarea> 	 -->
     </div>
 	
     <p id="result"></p>
